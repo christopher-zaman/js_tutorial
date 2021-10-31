@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "mhartl-palindrome": "^0.2.3"
+    "dom": "^0.0.3",
+    "js": "^0.1.0",
+    "jsdom": "^18.0.0",
+    "mhartl-palindrome": "^0.2.3",
+    "urllib": "^2.37.4"
   }
 }
