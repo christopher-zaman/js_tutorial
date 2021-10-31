@@ -3,13 +3,14 @@ let Phrase = require("mhartl-palindrome");
 
 function palindromeTester(event) {
   event.preventDefault();
-  let phrase = new Phrase(event.target.phrase.value);  
+
+  let phrase = new Phrase(event.target.phrase.value);
   let palindromeResult = document.querySelector("#palindromeResult");
 
   if (phrase.palindrome()) {
-    palindromeResult.innerHTML = `"<strong>${phrase.content}</strong>" is a palindrome!`;
+    palindromeResult.innerHTML = `"${phrase.content}" is a palindrome!`;
   } else {
-    palindromeResult.innerHTML = `"<strong>${phrase.content}</strong>" is not a palindrome.`;
+    palindromeResult.innerHTML = `"${phrase.content}" is not a palindrome.`;
   }
 }
 
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     palindromeTester(event);
   });
 });
+
 },{"mhartl-palindrome":2}],2:[function(require,module,exports){
 module.exports = Phrase;
 
